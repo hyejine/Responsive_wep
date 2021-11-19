@@ -1,0 +1,104 @@
+*{
+    margin: 0; padding: 0;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#wrap{
+    background-color: #23273C;
+}
+header{
+    width: 100%;
+    background: #e6f1f5;
+    border-bottom: 3px solid #1CB3E9;
+}
+header .header_inner{
+    width: 1280px; height: 60px;
+    margin: 0 auto;
+}
+header img{
+    /* logo패딩값 주지 말고 딱 중간에 정렬 하는 방법 없는지 */
+    float: left;
+    padding-top: 12px;
+    width:161px;height:38px;
+}
+header ul{
+    float: right;
+	line-height: 63px;
+}
+header ul li{
+    float: left;
+    margin-left: 13px;
+}
+header ul li:first-child{
+    font-size: 16px;
+    color: #0C69B1;
+}
+header ul li:nth-child(2) a{
+	background: linear-gradient( to bottom, #2895d9, #2383bf );
+    color: #fff;
+    font-size: 14px; font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* section1 */
+section{
+   width: 100%;
+}
+.con1_inner{
+    width: 1280px;height: 805px;
+    margin: 35px auto 0 auto;
+    border-radius: 7px;
+    position: relative;
+    background: #e6f1f5 url("./img/map.svg") no-repeat center bottom;
+}
+.con1_inner h3{
+    font-size: 24px;
+	color: #0984b6;
+    text-align: center;
+    padding-top: 150px;
+}
+.btn_outer{
+    position: absolute;
+    left: 50%; top:30%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.btn_outer ul{
+    margin-left:30px ;
+ } 
+.btn_outer ul a{
+	font-size: 34px;
+	color: #2e8fb7;
+	line-height: 120%;
+	float: left;
+	width: 300px;
+	height: 240px;
+	padding-top: 30px;
+	text-align: center;
+	border: 3px solid #2e8fb7;
+	border-radius: 12px;
+	background: #ffffff;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+	-webkit-transition: 0.25s;
+	transition: 0.25s;
+}
+.btn_outer ul li img{
+    margin-top: 10px;
+}
+.copy{
+    text-align: center;
+}
+@media screen and (max-width:1440px) {
+    .con1_inner{
+        /* height: 74.53%; */
+    }
+    .con1_inner{
+        /* font-size: 20px; */
+        /* padding-top:  */
+    }
+}

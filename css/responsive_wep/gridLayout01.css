@@ -1,0 +1,41 @@
+#wrapper{
+    margin: 0 auto;
+}
+header{
+    background-color:purple;
+    height: 100px;
+}
+aside{
+    float: left;
+    width: 30%; height: 500px;
+    background-color: blueviolet;
+}
+section{
+    float: left;
+    width: 70%; height: 500px;
+    background-color: rgb(180, 113, 244);
+}
+footer{
+    background-color:rgb(140, 61, 140);
+    height: 100px; 
+    clear: both;
+}
+/* 모바일  */
+@media screen and (max-width:768px) {
+    #wrapper{width:100% ;}
+    header{height: 300px;}
+    aside{float: none; height:300px; width: 100%;}
+    section{float:none; height:500px; width: 100%;}
+}
+/* 테블릿 */
+@media screen and (min-width:769px) and (max-width:960px) {
+    #wrapper{width:100% ;}
+}
+/* 노트북 화면 */
+@media screen and (min-width:961px) and (max-width:1280px) {
+    #wrapper{width:90% ;}
+}
+/* 큰 PC화면 데스크탑 */
+@media screen and (min-width:1281px) {
+    
+}

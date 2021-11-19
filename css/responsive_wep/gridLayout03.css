@@ -1,0 +1,58 @@
+#wraaper{
+ /* width: 1920px; */
+ margin: 0 auto;
+}  
+header{
+    height: 100px; width:100%;
+    background-color: #1565c0;
+}
+aside{
+    height: 600px; width: 30%;
+    float:left; 
+    background-color: #1e88e5;
+}
+#article1{
+    height: 200px; width: 70%;
+    float: left;
+    background-color: #2196f3;
+}
+#article2{
+    height: 200px; width: 70%;
+    float: left;
+    background-color: #42a5f5;
+}
+#article3{
+    height: 200px; width: 70%;
+    float: left;
+    background-color: #64b5f6;
+} 
+footer{
+    clear: both;
+    height: 100px; width: 100%;
+    background-color: #90caf9 ;
+}
+
+@media screen and (max-width:767px) {
+    #wrap{width: 100%;}
+    header{height:250px;}
+    aside{width: 100%; height: 200px;}
+    #article1{width: 100%; height: 200px;}
+    #article2{width: 100%; height: 200px;}
+    #article3{width: 100%; height: 200px;}
+}
+
+@media screen and (min-width:768px) and (max-width:960px) {
+    header{height:250px;}
+    aside{width: 100%; height: 200px;}
+    #article1{width: 50%; height: 300px;}
+    #article2{width: 50%; height: 300px;}
+    #article3{width: 100%;}
+}
+
+@media screen and (min-width:961px) and (max-width:1280px) {
+    header{height: 200px;}
+    aside{ width: 40%;}
+    #article1{width: 60%;height: 300px;}
+    #article2{width: 60%;height: 300px;}
+    #article3{width: 100%;height: 300px;}
+}

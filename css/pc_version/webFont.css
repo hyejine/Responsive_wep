@@ -1,0 +1,65 @@
+header{
+ width: 1000px; height: 100px;
+ margin: 0 auto;
+ border: 1px solid #ccc;
+}  
+header #gnb ul{
+    margin-top: 10px ;
+} 
+header #gnb ul li{
+    float: left;
+    border: 1px solid #ccc;
+    /* width: 40px; height: 25px;
+    line-height: 25px; */
+    padding: 10px 20px;
+    text-align: center;
+}
+header #gnb ul li a{
+    color: blue;
+    font-family: 'Lobster', cursive;
+}
+header #lnb ul{
+    margin-top: 55px ;
+}
+header #lnb ul li{
+    float: right;
+    border: 1px solid #ccc;
+    /* width: 40px; height: 25px;
+    line-height: 25px; */
+    padding: 10px 20px;
+    text-align: center;
+}
+header #lnb ul li a{
+    color: blue;
+    font-family: 'Lobster', cursive;
+}
+#content{  
+ width: 1000px; height: 500px;
+ margin: 0 auto;
+ border: 1px solid #ccc;
+ /* overflow: hidden; */
+}
+#content #section{
+    width: 670px;height: 500px;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    font-family: 'Poiret One', cursive;
+     float: left;
+     text-align: center;
+}
+#content #aside{
+     float: left;
+    width: 315px;height: 500px;
+    border: 1px solid #ccc;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+footer{
+    width: 1000px; height: 100px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+footer #office{
+    text-align: center;
+    line-height: 100px;
+}

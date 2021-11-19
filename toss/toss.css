@@ -1,0 +1,104 @@
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css); */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+* { font-family: 'Russo One', sans-serif; }
+#wrapper{
+}
+header{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    /* font-weight: 300; */
+}
+header .header_inner{
+    width: 1140px; height: 60px;
+    margin: 0 auto;
+}
+/*새로 안 사실 */
+header .header_inner_p{
+    width: 92%;     
+    margin: 0 auto;
+    position: relative;
+}
+header .logo{
+    line-height: 60px;
+}
+header .logo svg{
+    width: 76px;
+}
+nav{
+    position: absolute;
+    right: 0; top:50%;
+    transform: translateY(-50%);
+}
+nav div{
+   float: left;
+}
+nav div ul {
+     display: flex;
+}
+nav div ul a {
+    padding: 0 8px;
+}
+nav div ul a li{
+    color: #4e5968;
+    padding: 12px 10px;
+    font-size: 15px;
+}
+nav .lnb ul a:first-child{
+    margin-left: 44px;
+}
+nav .lnb ul span{
+    color: #d1d6db;
+    font-size: 13px;
+    margin-top: 13px;
+}
+nav .lnb ul a .en{
+    color: #d1d6db;
+}
+section{
+   width: 100%;
+}
+.con1{
+  position: relative;
+}
+.con1_gradient{
+    width: 100%; height: 500px; 
+    position: absolute; top:0; 
+    /* 그라디언트 지정 */
+    background: linear-gradient(180deg, white 0%, white 59px, rgba(255, 255, 255, 0) 100% );
+}
+/* 비이오 설정 */
+.con1_video{
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: 100vh;
+}
+.con1_video video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.con1_tit{
+    text-align: center;
+    position: absolute;
+    left: 50%; top:20%;
+    transform: translateX(-50%);
+}
+.con1_tit h1{
+    font-size: 66px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.con1_tit a{
+    background-color: #3182f6;
+    font-size: 22px;
+    /* font-weight: 700; */
+    color: #fff;
+    width: 178px;
+    height: 71px;
+    display: inline-block;
+    line-height: 71px;
+    border-radius: 40px;
+}

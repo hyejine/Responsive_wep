@@ -1,0 +1,79 @@
+#header .container{
+    width: 1200px; margin: 0 auto; 
+    height: 327px; background-color: wheat;
+}
+#header .header_menu{
+    text-align: right;
+    padding: 0 15px
+}
+#header .header_menu a{
+   color:#fff; padding: 8px 0 6px 10px;
+   transition: color 0.3s ease;
+}
+#header .header_menu a:hover{
+    color:#ccc; 
+ }
+ #header .header_tit{
+     text-align: center;
+     margin-top: 55px;
+     /* 모든 글자를 대문자 */
+     text-transform: uppercase; 
+ }
+ #header .header_tit h1{
+     font-size: 30px; color:#fff;
+     background-color: #51b0dc;
+     display: inline-block;
+     padding:5px 30px 5px 30px; 
+     letter-spacing: 2px; /*글자 간격 */
+     transition: box-shadow 0.25s ease-in-out;
+ }
+ #header .header_tit h1:hover{
+     box-shadow: inset -10em 0 0 0 #257fac,
+     inset 9em 0 0 0 #257fac;
+ }
+ #header .header_tit a{
+    font-size: 16px; color:#fff;
+    background-color: #4a9abf;
+    display: inline-block;
+    padding:10px 20px 10px 20px; 
+    margin-top: -7px;
+}
+#header .header_icon{
+    text-align: center;
+    margin: 40px 0;
+}
+#header .header_icon li{
+    display: inline; margin: 0 2px;
+}
+#header .header_icon li a{
+    background-color: #3192bf;
+    border-radius: 50%;
+    width: 60px; height: 60px; color: #fff;
+    display: inline-block;
+    line-height: 65px;
+    font-size: 35px;
+    position: relative;
+}
+#header .header_icon li a:hover{
+  box-shadow: 0 0 0 3px rgba(75, 154,191, 0.9)inset,
+  0 0 0 100px rgba(0, 0,0, 0.1)inset;
+}
+#header .header_icon li a:hover span{
+    opacity: 1;
+}
+#header .header_icon li a span{
+    position: absolute;
+    left:50%; top:-30px; 
+    font-size: 12px;
+    line-height: 1.6;
+    background-color: #3192bf;
+    transform: translateX(-50%);
+    padding: 3px 9px;
+    border-radius: 6px 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+/* mediaquery */
+@media screen and (max-width:1220px) {
+    .container{width:100%}
+}

@@ -1,0 +1,161 @@
+header .gnb{
+    width: 100%;
+    background-color: #353535;
+}
+header .gnb ul{
+    width: 1000px; height: 30px;
+    margin: 0 auto;
+    overflow: hidden;  /* 왜 배경색이 사라지지 */
+    line-height: 30px; /* */
+}
+header .gnb li{
+    float: left;   
+    list-style: none;
+    margin-left: 50px;
+    font-size: 0.9em;
+}
+header .gnb a{
+    color: #fff;
+    text-decoration: none;
+}
+header .logo{
+border: 1px solid #ccc;
+width: 200px; height: 100px;
+line-height: 100px; /* */
+text-align: center;
+margin: 70px auto;
+}
+header .hit_menu{
+  /* float: right; */
+  /* margin-left: 500px; */
+}
+header .hit_menu ul{
+  overflow: hidden;
+  width: 1000px;
+  margin: 0 auto 3px;
+}
+header .hit_menu li{
+    /* padding: 10px 10px; */
+    float: right;
+}
+header .hit_menu li a{
+    color: #282828;
+    border: 1px solid #ccc;
+    display: block; /* 선택 영역 확장시키려고*/
+    /* border-radius: 5px; */
+    padding: 10px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+header .hit_menu li:first-child a{
+    border-radius: 0 10px 10px 0;
+}
+header .hit_menu li:last-child a{
+    border-radius: 10px 0 0 10px;
+}
+header .lnb{
+   overflow: hidden;
+   width: 100%; height: 30px;
+   border-top: 1px dashed #ccc;
+   border-bottom: 1px dashed #ccc;
+   padding: 5px;
+}
+header .lnb ul{
+    width: 1000px;
+    margin: 0px auto;
+}
+header .lnb li{
+    margin: 5px;
+    /* margin-left: 50px; */
+    line-height: 25px;
+    float: left;
+
+}
+header .lnb li a{
+    color: #282828;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 30px; /* */
+}
+
+#content{
+    width: 1000px;
+    margin: 0px auto;
+    /* overflow: hidden; */
+}
+#content .section1{
+    overflow: hidden;
+    width: 1000px;
+    /* margin: 0px auto; */
+    border: 1px solid #ccc;
+}
+ #content .section1 div{
+    float: left;  
+    height: 400px; 
+    line-height: 400px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /*border 선을 안으로*/
+}
+#content .section1 div:nth-child(1){
+    width: 700px; 
+}
+
+#content .section1 div:nth-child(2){
+    width: 300px; 
+}
+#content .section2 div{
+    margin-top: 10px;
+    width:1000px; height: 400px;
+    line-height: 400px; text-align: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+#content .hit_product{
+    overflow: hidden;
+}
+#content .hit_product ul li{
+    float:left;
+    width: 240px;
+    margin:0 5px 0 0;
+    border: 1px solid #ccc;
+}
+#content .hit_product li:first-child{
+    margin-left:7px;
+}
+#content .md_product li{
+    float: left;   
+    border: 1px solid #ccc;
+    width: 240px;
+    margin:0 5px 0 0;
+}
+
+footer{
+    width: 1000px; height: 310px;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+footer div{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+    height: 250px;
+}
+footer .office_logo{
+   width:200px;
+}
+footer .office_adress{
+    width:500px;
+ }
+ footer .shopping_info{
+    width: 300px;
+ }
+ footer .copyright{
+    background-color: #242424;
+    color: #fff;
+    height: 50px; width: 1000px;
+    margin: 10px auto 0;
+    text-align: center;
+    line-height: 50px;
+    clear:both; border:0; /* float를 적용하고 싶지 않음*/
+ } 
