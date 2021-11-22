@@ -10,7 +10,9 @@
     font-weight: normal;
     font-style: normal;
 }
-*{font-family: 'IBMPlexSansKR-Regular';}
+*{
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Toss Product Sans,-apple-system,BlinkMacSystemFont,Bazier Square,Noto Sans KR,Segoe UI,Apple SD Gothic Neo,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji';}
 #wrapper{
 }
 header{
@@ -135,14 +137,14 @@ section{
     margin: 0 auto;
     position: relative;
 }
-/* 왜 잘 만들어진 css를 보면 first-child이런걸 많이 안쓰지? */
-.section3_con1 p:first-child, .section4_con1 p:first-child, .section5_con1 p:first-child{
+/* 왜 잘 만들어진 css를 보면 first-child이런걸 많이 안쓰지? => 코드 길어지면 렉걸림 */
+.section3_con1 p:first-child, .section4_con1 p:first-child, .section5_con1 p:first-child, .section6_con1 p:first-child, .section7_con1 p:first-child{
      margin-bottom: 30px;
      line-height: 1.3;
      color:#3182f6;
      font-size:28px; font-weight: 700;
 }
-.section3_con1 p:last-child, .section4_con1 p:last-child, .section5_con1 p:last-child{
+.section3_con1 p:last-child, .section4_con1 p:last-child, .section5_con1 p:last-child, .section6_con1 p:last-child, .section7_con1 p:last-child{
     font-size:50px ; font-weight: 700;
     line-height: 1.4;
 }
@@ -262,7 +264,7 @@ section{
     top: 0; right: -50px;
     width: 540px; height: auto;
 }
-/* 어떻게 포지션을 안쓰고 한거지 */
+/* 어떻게 포지션을 안쓰고 한걸까? */
 .section4_con2_3 p{
     font-size: 23px; font-weight: 600;
     line-height: 1.5;
@@ -278,24 +280,16 @@ section{
 }
 .section5{
     width: 100%; height: 100%;
-    position: relative;
-    /* overflow: hidden; */
 }
 .section5_inner{
-    background-color: yellowgreen;
-    max-width: 1140px;
+    max-width: 1140px; 
     margin: 0 auto;
     padding:250px 0;
-    position: relative;
 }
 .section5_inner2{
     width: 92%; height: 100%;
     margin: 0 auto;
     position: relative;
-    background-color: yellow;
-}
-.section5_inner3{
-    width: 100%; height: 100%;
 }
 .section5_con1{
     margin-bottom: 210px;
@@ -305,68 +299,232 @@ section{
 }
 .section5_con2{
     position: absolute;
-    top: 50%;  right: -60px;
-    transform: translate3d(0, -50%, 0);
-    background-color: rgb(14, 14, 14);
+    right: 0px; top: 0px;
 }
-.section5_con2_inner{
+/* 이거 원리 이해 못했음 : 사진 크기 */
+.section5_con2_inner {
+    width: 600px; height: 936px;
     position: relative;
-    width: 600px;
-    height: 936px;
-    transform: translate3d(0px, 50px, 0px);
+    transform: translate3d(0px, 50px, 0px)
 }
 .section5_con2_inner2{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 57%;
+    right: 15px; top:10px;
+    width: 57%; height: auto;
 }
-.section5_con2_inner2 img{
+.section5_con2_inner2> .img{
     width: 100%; height: 100%;
-}
-/* 
-.section5_con2{
-    background-color: yellowgreen;
-    position: absolute;
-    top: 50%;  right: -60px;
-    transform: translate3d(0, -50%, 0);
-}
-.section5_con2_inner{
-    position: relative;
-    width: 600px;
-    height: 936px;
-}
-.section5_con2_inner img{
-    position: absolute;
-    top: 50%; left: 50%;
-    width: 57%;
-    transform: translate3d(-50%, -50%, 0);
-} */
-/* .section5_con2_shadow{
-    width: 100%; height: 100%;
-}
-.section5_con2_img{
-    width: 100%; height: 100%;
-
     z-index: -1;
-} */
-.section5_con3{
+}
+.section5_con2_shadow{
+    width: 100%; height: 100%;
     position: absolute;
-    bottom: 0;
+    right: -114px; top: -90px;
 }
 .section5_con3_1 p{
-    font-size: ; font-weight: ;
-    line-height: ;
-    margin-bottom: ;
+    font-size: 48px; font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
 .section5_con3_span1{
-    color: ;
+    color: #8b95a1;
 }
 .section5_con3_span2{
-    color: ;
+    color: #d1d6db;
 }
 .section5_con3_2 p{
-    font-size: ; font-weight: ;
-    line-height: ;
+    font-size: 23px; font-weight:600 ;
+    line-height: 1.5;
+}
+.section6{
+    width: 100%; height:100%; 
+    background-color: #f9fafb;
+}
+.section6_inner{
+    width: 1140px; 
+    margin: 0 auto; 
+    padding: 250px 0; 
+}
+.section6_inner2{
+    width: 92%; height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.section6_con2{
+    margin-top:80px;
+    width: calc(100% + 30px);
+}
+.section6_con2_inner{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.section6_con2_1{
+    padding:40px;
+    background-color: #191f28;
+    border-radius: 26px;
+    width: calc(100% - 30px); height: 500px;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.section6_con2_1 p{
+    font-size: 40px; font-weight: 600;
+    line-height: 1.4;
+    color: rgb(176, 184, 193);
+}
+.section6_con2_1 p span{
+    color: #ffffff;
+}
+.section6_con2_img{
+    position: absolute;
+    width: 520px;
+    top:0; right: 78px;
+}
+.section6_con2_img>img{
+   width: 100%; 
+}
+/* svg 애니메이션 효과는 잘 모르겠음,, */
+.section_con2_svg{
+    position: absolute;
+    top: 180px; left: 50%;
+    width: 200px;
+    transform: translateX(-50%);
+}
+.section_con2_svg svg{
+    width: 100%; height: 100%;
+}
+.section6_con2_2{
+    width: calc(50% - 30px); height:500px ;
+    margin: 0 30px 30px 0;; 
+    padding: 40px;
+    border-radius:26px ;
+    position: relative;
+    background-color: #fff
+}
+.section6_con2_2 p{
+    font-size: 23px; font-weight:600 ;
+    line-height: 1.5;
+    margin-bottom: 84px
+}
+.section6_con2_svg2{
+    position: absolute;
+    bottom: 50px; left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+}
+.section6_con2_svg2 svg{
+    width: 100%;
+}
+.section6_con2_3{
+    width: calc(50% - 30px); height: 500px;
+    margin: 0 30px 30px 0;
+    padding: 40px;
+    background-color:#add1ff ;
+    border-radius: 26px;
+    position: relative;
+    overflow: hidden;
+}
+.section6_con2_3 p{
+    font-size: 23px; font-weight: 600; 
+    line-height:1.5;
+    margin-bottom: 10px;
+}
+.section6_con2_3 img{
+    max-width: 430px;
+    width: 100%;
+}
+.section7{
+    width: 100%;height: 100%;
+}
+.section7_inner{
+    padding: 250px 0;
+}
+.section7_con1{
+    width: 1140px;
+    margin: 0 auto;
+}
+.section7_con1_inner{
+    width: 92%; height:100%;
+    margin: 0 auto;
+}
+/* 레이아웃?  */
+.section7_con2{
+    position: relative;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.section7_con2_img{
+    width: 600px; height: 936px;
+    margin: 0 auto;
+    position: relative;
+}
+.section7_con2_img1{
+    position: absolute;
+    width: 57%; height: auto;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+.section7_con2_img2{
+    position: absolute;
+    left:50%; bottom: 124px;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.section7_con2_icon{
+    display: flex;
+    flex-direction: row;
+}
+.section7_con2_icon img:first-child{
+    margin-left:0;
+}
+.section7_con2_icon img{
+    margin-left: 16px;
+    width: 178px; height: 178px;
+}
+.section7_con2_shadow{
+    width: 100%; height: 100%;
+}
+.section7_con2_t{
+    position: absolute;
+    top:342px; left: 50%; 
+    transform: translateX(-50%);
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+.section7_con2_t p{
+    font-size:23px; font-weight:600 ;
+    line-height: 1.5;
+}
+.section7_con3{
+    text-align: center;
+    font-size:23px ; font-weight:600 ;
+    line-height: 1.5;
+}
+.section8{
+    position: relative;
+    width: 100%; height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./img/con8/section2_4_big.jpg);
+}
+.section8 span{
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 100px; font-weight: 700; 
+    line-height: 1.3;
+    color: #f9fafb;
+}
+.section9{
+    width: 100%; height: 100%;
+}
+.section9_inner{
+    
 }
 /* div를 왜 이렇게 많이 쪼개 놓은거지;? */
