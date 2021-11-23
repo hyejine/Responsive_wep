@@ -138,13 +138,13 @@ section{
     position: relative;
 }
 /* 왜 잘 만들어진 css를 보면 first-child이런걸 많이 안쓰지? => 코드 길어지면 렉걸림 */
-.section3_con1 p:first-child, .section4_con1 p:first-child, .section5_con1 p:first-child, .section6_con1 p:first-child, .section7_con1 p:first-child{
+.section3_con1 p:first-child, .section4_con1 p:first-child, .section5_con1 p:first-child, .section6_con1 p:first-child, .section7_con1 p:first-child, .seciton10_con1 p:first-child{
      margin-bottom: 30px;
      line-height: 1.3;
      color:#3182f6;
      font-size:28px; font-weight: 700;
 }
-.section3_con1 p:last-child, .section4_con1 p:last-child, .section5_con1 p:last-child, .section6_con1 p:last-child, .section7_con1 p:last-child{
+.section3_con1 p:last-child, .section4_con1 p:last-child, .section5_con1 p:last-child, .section6_con1 p:last-child, .section7_con1 p:last-child, .seciton10_con1 p:last-child{
     font-size:50px ; font-weight: 700;
     line-height: 1.4;
 }
@@ -525,6 +525,301 @@ section{
     width: 100%; height: 100%;
 }
 .section9_inner{
-    
+    width: 1140px; 
+    margin: 0 auto;
+    padding: 250px 0;
 }
+.section9_inner2{
+    width: 92%; height: 100%; 
+    margin: 0 auto;
+}
+.section9_con1{
+    font-size: 60px; font-weight:700 ;
+    line-height: 1.4;
+    margin-bottom: 140px;
+}
+.section9_con2{
+    margin-bottom: 210px;
+}
+.section9_con2 img{
+    padding-bottom: 60px;
+    width: 100%;
+    max-width: 740px;
+    margin: 0 auto;
+    display: block;
+}
+.section9_con2_2>.p1{
+    line-height: 1.3; 
+    font-size: 40px; font-weight: 700;
+    color: #191f28;
+    margin-bottom: 24px;
+}
+.section9_con2_2>.p1>span{
+    color: #b0b8c1;
+}
+.section9_con2_2>.p2{
+    line-height: 1.5; 
+    font-size: 20px; font-weight: 600;
+    color: #333d4b;
+}
+.section9_con3{
+    margin-bottom: 220px;
+    display: flex;
+}
+.section9_con3_1{
+    width: 100%;
+    flex: 2;
+    margin-right: 40px;
+}
+.section9_con3_1> .img1{
+    /* flex-shrink: 0; */
+    width: 100%;
+    margin-bottom: 40px;
+}
+.section9_con3_2 h1{
+    font-size: 40px; font-weight: 700;
+    line-height: 1.3;
+    color:#191f28;
+}
+.section9_con3_2> h1{
+    padding-bottom: 10px;
+}
+.section9_con3_2 span{
+    font-size: 40px; font-weight: 700;
+    line-height: 1.3;
+    color: #b0b8c1;
+}
+.section9_con3_3{
+    flex: 1;
+    margin-top: 122px;
+}
+.section9_con3_3>img{
+    /* flex-shrink: 0; */
+    width: 100%;
+    margin-bottom: 35px;
+}
+.section9_con3_3 p{
+    line-height: 1.5;
+    font-size: 20px; font-weight: 600;
+}
+.section9_con4{
+    width: 100%;
+}
+.section9_con4 img{
+    width: 100%;
+    margin-bottom:50px;
+}
+.section9_con4_2{
+    width: 100%;
+    display: flex;
+} 
+.section9_con4_2 h1{
+    flex:1;
+    color: #191f28;
+    font-size: 40px; font-weight:700; 
+    line-height: 1.3;
+}
+.section9_con4_2 h1 span{
+    margin-top: 5px;
+    color: #b0b8c1;
+}
+.section9_con4_2 h5{
+    flex:1;
+    color: #333d4b;
+    font-size: 20px; font-weight: 600; 
+    line-height: 1.5;
+}
+.section10{
+    width: 100%; height: 100%;
+    background-color:#f9fafb ;
+}
+.section10_inner{
+    width: 1140px;
+    padding: 250px 0;
+    margin: 0 auto;
+}
+.section10_inner2{
+     width: 92%; height: 100%;
+     margin: 0 auto;
+}
+.section10_con2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.section10_con2_2{
+    width: 50%;
+    padding-bottom: 100px;
+    /* max-width: 350px;  */
+    /* margin: 0 200px 100px 0; */
+}
+/* 왜 부모영역에 픽셀을 주고 자식에 100센트를 주지?
+   화질이 덜 뭉게지나?  */
+.section10_con2_img{
+    width: 120px; height: 120px;
+    border-radius:26px ;
+    margin-bottom: 30px;
+    position: relative;
+}
+.section10_con2_color1{
+    background-color: #ffe69b;
+}
+.section10_con2_color2{
+    background-color: #f2f4f6;
+}
+.section10_con2_color3{
+    background-color: #bce9e9;
+}
+.section10_con2_color4{
+    background-color: #aeefd5;
+}
+.section10_con2_color5{
+    background-color: #edccf8;
+}
+.section10_con2_color6{
+    background-color:#f2f4f6 ;
+}
+.section10_con2_color7{
+    background-color: #e8f3ff;
+}
+.section10_con2_color8{
+    background-color:#aeefd5 ;
+}
+.section10_con2_img svg{
+    height: 60px; width: 60px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+.section10_con2_2 h1{
+    font-size: 20px; font-weight:600 ; 
+    line-height:1.6 ;
+    margin-bottom: 6px;
+    color: #333d4b;
+}
+.section10_con2_2 h3{
+    font-size:18px; font-weight:500 ; 
+    line-height:1.6 ;
+    color:#8b95a1 ;
+}
+.section11{
+    width: 100%; height: 100%; 
+    background-color: #000000;
+    padding: 100px 0 250px 0;
+    overflow: hidden;
+}
+.section11_img img{
+    width: 100%;
+}
+.section11_inner{
+    width: 1140px;
+    margin: 0 auto;
+}
+.section11_inner2{
+    width: 92%; height: 100%; 
+    margin: 0 auto;
+}
+.section11_con1{
+   text-align: center;
+}
+.section11_con1 h1{
+    font-size:60px ; font-weight: 700; 
+    line-height: 1.4; 
+    color:#fff;
+}
+.section11_con1 h3{
+    font-size: 30px; font-weight: 700; 
+    line-height: 1.4; 
+    color:#b0b8c1;
+    margin:  21px 0 200px 0;
+}
+.section11_con2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -80px, -80px, 0;
+    width: 100%;
+    overflow: hidden;
+}
+.section11_box_wrap {
+    max-width: 300px;
+    margin: 0 80px 80px 0;
+}
+.section11_box_wrap h2{
+    font-size: 30px; font-weight: 700; 
+    line-height: 1.3;
+    color:#fff;
+}
+.section11_box_wrap h4{
+    font-size: 20px; font-weight:600;
+    line-height: 1.6;
+    color: #b0b8c1;
+    margin: 12px 0 38px 0;
+}
+.section11_box_wrap a{
+    margin: 1px 0 0;
+    padding: 14px 18px;
+    font-size: 15px; font-weight: 600;
+    line-height: 20px; 
+    color: #f9fafb;
+    background-color: #3182f6;
+    border-radius: 8px;
+}
+footer{
+    width: 100%; height: 100%;
+    background-color: #191f28;
+    padding: 50px 0 100px;
+}
+.footer_inner{
+    padding: 0 67px;
+    max-width: 1064px; 
+    margin:auto;
+}
+.footer_gnb{
+    display: flex;
+    margin-bottom: 50px;
+}
+.footer_gnb_1{
+    width: 170px;
+    font-size: 15px; 
+    line-height: 30px;
+}
+.footer_gnb_1 span{
+    color: #b0b8c1;
+    font-weight: 700;
+    padding-bottom:5px;
+    display: inline-block;
+}
+.footer_gnb_1 a{
+     color: #6b7684;
+}
+/* 처음봄 */
+.footer_gnb_1:last-of-type{
+    flex: 1;
+}
+.footer_pp>.p1{
+    font-size: ; font-weight: ;
+    line-height: ; color: ;
+    margin-bottom: ;
+}
+.footer_pp>.p2{
+    font-size: ; font-weight: ;
+    line-height: ; color: ;
+}
+.footer_service{
+    margin:;
+}
+.footer_service ul li{
+    width: ;
+    display: flex;
+}
+.footer_service li a{
+    font-size: ; font-weight: ;
+    line-height: ; color: ;
+}
+.footer_service li a strong{
+    color: ;
+}
+
 /* div를 왜 이렇게 많이 쪼개 놓은거지;? */
+/* class이름 짓는 기준이 뭐지  */
