@@ -1,4 +1,21 @@
 $(document).ready(function(){
+    // 스크롤 이동시 class 생성
+    $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+            $('header').addClass('header_border');
+        }else{
+            $('header').removeClass('header_border');
+        }
+    });
+
+    // $(window).scroll(function(){
+    //     var scroll=$(window).scrollTop();
+    //     if(scoll>=50){
+    //         $(".header_inner").addClass("header_border");
+    //     }else{
+    //         $(".header_inner").removeClass("header_border");
+    //     };
+    // });
     // $(window).scroll (function(){
     //     $('.section3_con1 ').animate({'opacity':'1'},500);
     //         }
