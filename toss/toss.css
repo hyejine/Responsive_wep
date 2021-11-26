@@ -9,7 +9,13 @@ body, html {
     -webkit-font-smoothing: antialiased;
     word-wrap: break-word;
 }
-
+:root{
+    --width-inner:1140px;
+    --width-inner-p:92%;
+}
+:root{
+    --grey700:#4e5968;
+}
 header{
     width: 100%; height: 60px;
     position: absolute;
@@ -20,19 +26,60 @@ header{
 .header_border{
     border-bottom:1px solid rgba(0,27,55,.1);
 }
-/* header .header_inner{
-    width: 1140px; height: 60px;
-    margin: 0 auto;
+/* 새로 안 사실 inner, root 사용 */
+.div_inner_default{
+    width: var(--width-inner); height: 100%;
+    margin: auto;
 }
-.header_border{
-    border-bottom: 1px solid black;
-} */
+.div_container{
+    width: var(--width-inner-p); height: 100%;
+    display: flex;
+    margin: auto;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 76px; 
+}
+.logo svg{
+    width: auto; height: 20px;
+}
+nav{
+    display: flex;
+    flex: 1;
+    /* overflow-y: hidden; */
+    height: 100%;
+    justify-content: space-between;
+    /* transition: .2s ease; */
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0; 
+}
+nav ul li{
+    height: 100%;
+    display: flex;
+    align-content: center;
+    padding: 0 8px;
+    color: var(--grey700);
+}
+nav ul li a{
+    padding: 12px 10px;
+    font-size: 15px;
+    line-height: 20px;
+    color: currentColor;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: left;
+}
+
 /*새로 안 사실 */
-/* header .header_inner_p{
-    width: 92%;     
-    margin: 0 auto;
-    position: relative;
-}
+/* 
 header .logo{
     line-height: 60px;
 }
