@@ -9,9 +9,27 @@ $(document).ready(function(){
     });
 
     // 스크롤 이동시 애니메이션 (아래->위)
-    $(".section3").scroll(function(){
-        $('.section3_con1 ').animate({'opacity':'1'},500);
-    })
+    $(document).ready(function () {
+        /* 1 */
+        const saTriggerMargin = 300;
+        const saElementList = document.querySelectorAll('.section4_right');
+    
+        const saFunc = function () {
+            for (const element of saElementList) {
+                if (!element.classList.contains('show')) {
+                    if (window.innerHeight > element.getBoundingClientRect().top + saTriggerMargin) {
+                        element.classList.add('show');
+                    }
+                }
+            }
+        };
+    
+        window.addEventListener('load', saFunc);
+        window.addEventListener('scroll', saFunc);
+    });
+    // $(".section3").scroll(function(){
+    //     $('.section3_con1 ').animate({'opacity':'1'},500);
+    // })
 
     // $(window).scroll(function(){
     //     var scroll=$(window).scrollTop();
@@ -21,10 +39,10 @@ $(document).ready(function(){
     //         $(".header_inner").removeClass("header_border");
     //     };
     // });
-    $(window).scroll (function(){
-        $('.section3_con1 ').animate({'opacity':'1'},500);
-            }
-        ); 
+    // $(window).scroll (function(){
+    //     $('.section3_con1 ').animate({'opacity':'1'},500);
+    //         }
+    //     ); 
 
 
     // function isElementUnderBottom(elem, triggerDiff) {
