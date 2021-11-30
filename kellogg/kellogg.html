@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./kellogg.css" />
+    <link rel="stylesheet" href="./font.css" />
+    <link rel="stylesheet" href="./swiper.css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="./kellogg.js"></script>
+
+    <!-- swiper -->
+ <!-- Link Swiper's CSS -->
+ <link
+ rel="stylesheet"
+ href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+    <title>kellogg</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header_inner">
+        <span class="logo"><img src="./img/logo_1280.png" alt="" /></span>
+        <ul class="gnb_nav">
+          <li class="gnb_nav1">
+            <a href="">Brand & Products</a>
+            <ul class="gnb_nav_ul">
+              <li><a href="">Brand & Products</a></li>
+              <li><a href="">Kellogg's Shop</a></li>
+            </ul>
+          </li>
+          <li><a href="">Recipes</a></li>
+          <li><a href="">Ceral & Nutrition</a></li>
+          <li><a href="">Better Days</a></li>
+          <li class="gnb_nav1">
+            <a href="">About Kellogg's</a>
+            <ul class="gnb_nav_ul">
+              <li><a href="">회사소개</a></li>
+              <li><a href="">회사연혁</a></li>
+              <li><a href="">켈로그의 가치</a></li>
+              <li><a href="">인재 채용</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="report"><a href="">사회공헌 보고서</a></li>
+        </ul>
+
+        <ul class="lnb_nav">
+          <li>
+            <a href=""><img src="./img/icon_gnb_youtube.png" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./img/icon_gnb_instagram.png" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./img/icon_gnb_naver_blog.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- section1 -->
+    <section>
+         <!-- Swiper -->
+         <div class="swiper_div">
+    <div class="swiper mySwiper ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="">
+              <img class="swiper_img1" src="./img/swiper_con1/desktop_main1.png">
+                <img class="swiper_tit1 tit_width" src="./img/swiper_con1/img_main_visual_txt_red_1180.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+              <img class="swiper_img1" src="./img/swiper_con1/desktop_main0.png" alt=""> 
+               <div class="swiper_tit2">
+                <h1>Kellogg's <br/>
+                    Online Shop
+                </h1>
+                <h3>맛과 영양을 고루 갖춘 켈로그 제품을 온<br/>
+                    라인에서 빠르게 주문하고 받아보세요!
+                </h3>
+                <a href=""><em>Kellogg's shop 보기 </em></a>
+               </div>
+       </div>
+          <div class="swiper-slide">
+              <a href="">
+              <img class="swiper_img1" src="./img/swiper_con1/desktop_main4.png" alt="">
+              <img class="swiper_tit3 tit_width" src="./img/swiper_con1/img_main_visual_txt_red_1180.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+                <img class="swiper_img1" src="./img/swiper_con1/desktop_main2.png" alt="">
+                <img class="swiper_tit4 tit_width" src="./img/swiper_con1/img_main_visual_txt_white_1180 (1).png" alt="">
+              </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+                <img class="swiper_img1" src="./img/swiper_con1/desktop_main3.png" alt="">
+                <img class="swiper_tit5 tit_width" src="./img/swiper_con1/img_main_visual_txt_red_1180.png" alt="">
+              </a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <div class="section2_wrap">
+        <div class="section2_inner">
+        <div class="section2">
+            <div class="">
+             <h1>켈로그 
+                 제품 
+             </h1>
+             <a href="">
+                 더보기 <img src=""><span></span>
+             </a>
+            </div>
+            <div><img src="" alt=""></div>
+            <div><img src="" alt=""></div>
+            <div><img src="" alt=""></div>
+            <div><img src="" alt=""></div>
+        </div>    
+        </div> 
+            </div>
+    </section>
+
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+         navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+         },
+       });
+     </script>
+  </body>
+</html>

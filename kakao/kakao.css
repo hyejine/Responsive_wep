@@ -51,7 +51,7 @@ body{
 }
 header{
     background-color: var(--baseBackground);
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 20000;
     transition: top .2s ease-in-out;
@@ -65,7 +65,9 @@ header{
 }
 .header_inner{
     height: 74px;
-    background-color: var(--colorFg26);
+    display: flex;
+    line-height: 74px;
+    /* background-color: var(--colorFg26); */
 }
 #header_inner h1{
     float: left;
@@ -76,20 +78,49 @@ header{
 .logo{
     display: block;
     width: 74px; height: 24px;
+    /* line-height: 74px; */
     background-color: var(--colorFg26);
 }
 .logo svg{
     width: 100%; 
 }
 .header_inner{
-    text-align: center;
 }
 nav ul {
     display: flex;
 }
-
+.gnb_nav{
+    /* background-color: var(--colorFg26); */
+    width: 50%;
+    float: right;
+}
 /* section */
 .tit{
-    font-size: ; font-weight: ;
+    font-size:40px; font-weight:  700;
     line-height: ;
+    background-color: #bbb;
+    padding: 50px 0;
+}
+.tit span{
+    width: 70px; height: 70px;
+    background-color: var(--colorFg26);
+    display: inline-block;
+}
+.tit span img{
+    width: 100%;
+}
+.section1{
+    width: 100%;
+    display: flex;
+}
+.con1{
+ display: 1;
+ width: 45%;
+ background-color: tan;
+}
+.t1{
+    padding: 10px;
+}
+.t1 img{
+    width: 30px;
 }
