@@ -235,56 +235,159 @@ section{
 .section3{
     display: flex;
     flex-direction: row;
-    position: relative;
     padding-top: 245px;
-    width: 1180px; 
+    width: 1180px; height: auto;
     margin: 0 auto;
 }
 .s3_c{
-    /* display: flex; */
+    display: flex;
+    position: relative;
 }
 .s3_c_img{
     flex: 0 0 600px;
-    /* display: 1; width: 100%;  */
+    display: block;
+}
+.s3_c_img img{
+    width: 100%;
 }
 .s3_c_w{
     flex: 0 0 580px;
     background-color:#fff8f5 ;
-     padding: 40px 49px;
+    width: 100%; height: 570px;
 }
- .s3_c_t1{
-    width: 194px;     height: 60px;
-    top: 60px;
-        left: 639px;
-    margin: 0 auto;
-    position: absolute;
+.s3_c_t1{
+    padding:70px 0 0 39px;
+}
+.s3_c_t{
+    padding-left: 39px;
 }
 .s3_c_t2{
-    padding-top: 120px;
-    width: 90%;
     margin: 40px 0;
     font-size: 28px; font-weight: bold; 
-    line-height: 1.2;
+    line-height: 1.2; 
 }
 .s3_c_t3{
+    margin: 30px 0;
+}
+.s3_c_t4{
     padding: 30px 0;
-    position: relative;
+    justify-content: space-between;
+    display: flex;
 }
-/*
-.s3_c_t3 li{
+.s3_c_t4 div{
+    display: 1;
+    margin-right: 30px;
+}
+.s3_c_t4_1 img{
+    margin: 0 auto;
+}
+.s3_c_t4 h5{
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 500;
+    margin: 11px 0 4px;
     text-align: center;
-    padding: 30px;
-    margin-left: ;
-    float: left; 
 }
-.s3_c_t3 li img{
-    margin-left:20px ;
-    background-color: yellow
+.s3_c_t4 p{
+    margin-top:26px ;
+    font-size: 18px;
+    font-weight: 900;
+    width: 105px; height: 54px;
+    border-radius: 3px;
+    background-color: #ececec;
+    text-align: center;
+    line-height: 54px;
 }
-.s3_c_t3 h5{
-    font-size:  ; font-weight: ;
+.s3_c_t4_1 h6{
+    margin-top: 4px;
+ font-size: 12px; font-weight: 400; 
+text-align: center;
 }
-.s3_c_t3 p{
-    background-color: yellowgreen;
-    padding: 20px;
-} */
+.last_p{
+    margin-top: 0 !important;
+}
+.section4_inner{
+    padding: 40px 0;
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+}
+.section4_inner div{
+    flex: 1;
+}
+.s4_c,.s4_c1_inner{
+    justify-content: center;
+    position: relative;
+    height:600px;
+}
+.s4_c_img1{
+    background:url('https://kellogg.co.kr/Images/Main/img_nutritional_off_1.png') no-repeat 0 0;
+}
+.s4_c_p{
+    text-align: center;
+    position: absolute;
+    left: 50%; top: 50%; 
+    transform: translate(-50%,-50%);
+}
+.s4_c_p_i{
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.s4_c_p h5{
+    line-height: 1.4;
+    font-size:  18px; font-weight: 700;
+    width: 173px;
+}
+.s4_c_p h6, .s4_c_p_inner h6{
+    font-size: 14px; font-weight: 400; 
+    text-decoration: underline;
+}
+.s4_c_img2{
+    background: url('https://kellogg.co.kr/Images/Main/img_nutritional_off_2.png')no-repeat 0 0;
+}
+.s4_c_img3{
+    background: url('https://kellogg.co.kr/Images/Main/img_nutritional_off_3.png')no-repeat 0 0; 
+}
+.s4_c_img4{
+    background: url('https://kellogg.co.kr/Images/Main/img_nutritional_off_4.png')no-repeat 0 0; 
+}
+.inner_img1{
+    background:url('https://kellogg.co.kr/Images/Main/img_nutritional_on_1.png') no-repeat 0 0;
+}
+.s4_c_p_inner{
+    width: 250px; height: 250px;
+    position: relative;
+    text-align: center;
+    position: absolute;
+    left: 50%; top: 50%; 
+    transform: translate(-50%,-50%);
+}
+.s4_c_p_img1{
+    background: url('https://kellogg.co.kr/Images/Main/ico_nutritional_on_1.png') ;
+}
+.s4_c_p_inner{
+    color: #fff;
+    line-height: 1.4;
+    font-size:  25px; font-weight: 700;
+}
+.s4_c_p_inner h5{
+    margin-top: 55px;
+}
+.inner_img2{
+    background:url('https://kellogg.co.kr/Images/Main/img_nutritional_on_2.png') no-repeat 0 0;
+}
+.s4_c_p_img2{
+    background: url('https://kellogg.co.kr/Images/Main/ico_nutritional_on_2.png');
+}
+.inner_img3{
+    background:url('https://kellogg.co.kr/Images/Main/img_nutritional_on_3.jpg') no-repeat 0 0;
+}
+.s4_c_p_img3{
+    background: url('https://kellogg.co.kr/Images/Main/ico_nutritional_on_3.png');
+}
+.inner_img4{
+    background:url('https://kellogg.co.kr/Images/Main/img_nutritional_on_4.png') no-repeat 0 0;
+}
+.s4_c_p_img4{
+    background: url('https://kellogg.co.kr/Images/Main/ico_nutritional_on_4.png') no-repeat 0 0;
+}
