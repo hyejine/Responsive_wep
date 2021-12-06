@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $(".menuIcon").click(function(){
+        $("nav").addClass("hide");
+        $(".mobile_wrap").show();
+    });
+    $(".close_toggle").click(function(){
+        $("nav").removeClass("hide");
+        $(".mobile_wrap").hide();
+    });
+});
