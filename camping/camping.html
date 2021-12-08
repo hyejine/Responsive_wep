@@ -11,31 +11,7 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
      <!-- Link Swiper's CSS -->
      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-     <script>
-        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-            mapOption = { 
-                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-                level: 3 // 지도의 확대 레벨
-            };
-        
-        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-        
-        var marker = new kakao.maps.Marker();
-        
-        // 타일 로드가 완료되면 지도 중심에 마커를 표시합니다
-        kakao.maps.event.addListener(map, 'tilesloaded', displayMarker);
-        
-        function displayMarker() {
-            
-            // 마커의 위치를 지도중심으로 설정합니다 
-            marker.setPosition(map.getCenter()); 
-            marker.setMap(map); 
-        
-            // 아래 코드는 최초 한번만 타일로드 이벤트가 발생했을 때 어떤 처리를 하고 
-            // 지도에 등록된 타일로드 이벤트를 제거하는 코드입니다 
-            // kakao.maps.event.removeListener(map, 'tilesloaded', displayMarker);
-        }
-        </script>
+    
 </head>
 <body>
     <header>
@@ -56,7 +32,13 @@
 
     <section>
         <div class="section1">
-        <div class="s1_img1 s1_img s1_img_margin1">
+            <div class="s1_info1 s1_img1">
+                <a href=""> 
+                    <p class="p1">캠핑장 둘러보기</p>
+                    <p class="p2">RPEVIEW</p>
+                </a>
+            </div>
+        <!-- <div class="s1_img1 s1_img s1_img_margin1">
             <p class="p1">캠핑장 둘러보기</p>
             <p class="p2">RPEVIEW</p>
         </div>
@@ -83,26 +65,43 @@
         <div class="s1_img s1_img4">
             <p class="p1">시설안내</p>
             <p class="p2">FACILTY</p>
-        </div>
+        </div> -->
     </div>
-  
-    <div class="section2">
-        
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+<div class="section2">
+    <div class="s2_map">
+        <div id="map" style="width:100%;height:100%;"></div>
     </div>
+    <div class="s2_info1 s2_info">
+        <a href="">
+        <p class="p5">2022년(내년도) 예..</p>
+        <p class="p6">2022년도 예약에 관하여 문의하시는 분들이 종종 있어서 공지사항 드립니..</p>
+        <p class="p7">2021-10-01</p></a>
+    </div>
+    <div class="s2_info2 s2_info">
+        <a href="">
+            <p class="p5">사이트 면 개선 공사 알림</p>
+            <p class="p6">안녕하십니까.. 국민여가캠핑장에서 알려드립니다..</p>
+            <p class="p7">2021-09-24</p></a>
+    </div>
+    <div class="s2_phon">
+        <h3 class="s2_phon_margin">이용문의</h3>
+        <h1 class="s2_phon_margin">041.529.5113</h1>
+        <p class="s2_phon_margin">
+        <span class="circle">상담시간 09:00 ~ 18:00</span>
+        <span>점심시간 12:00 ~ 13:00</span></p>
+    </div>
+</div>
+   
 </section>
-<div id="map" style="width:100px;height:350px;"></div>
 
     <footer>
-        
+        <div></div>
     </footer>
 
      <!-- Swiper JS -->
      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0768534e0a9149dc5a5213c378b30c1e"></script>
+     <script type="text/javascript" src="./camping.js"></script>
      <!-- Initialize Swiper -->
      <script>
         var swiper = new Swiper(".mySwiper", {
