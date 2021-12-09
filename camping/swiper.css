@@ -13,7 +13,6 @@ body {
 }
 
 .swiper-slide {
-  background: url('./images/visual.png');
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -35,4 +34,27 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.s1_swiper{
+  background: url('./images/visual.png');
+  grid-column: 3;
+  grid-row: 1/3;
+}
+.swiper-slide{
+  background: url('./images/visual.png');
+}
+.swiper-pagination-clickable .swiper-pagination-bullet{
+  width: 10px; height: 10px;
+  margin: 0 0 0 8px;
+  padding: 0;
+  cursor: pointer;
+  line-height: 0;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.swiper-pagination-bullet-active {
+  border: none !important;
+    width: 14px !important;
+    height: 14px !important;
+  background-color: #FD0 !important;
 }
