@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* base */
+/* HTML5 RESET CSS Document */
+html,body{width:100%; height:100%; color:#4b4b4b; font-size:18px; }
+html,body{font-smooth:never !important; -webkit-font-smoothing:subpixel-antialiased !important; -moz-osx-font-smoothing:auto !important;}/* 기본 폰트 크기 지정*/
+body     {*word-break:break-all;-ms-word-break:break-all; -webkit-text-size-adjust:none;/*모바일 가로보기시 글씨 크기 확대 방지*/ }
+
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address,
+cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section,
+summary, time, mark, audio, video { 
+	margin:0;padding:0;border:0; 
+	font-size:inherit; 
+	font-family: AppleSDGothicNeo, '맑은 고딕', 'Malgun Gothic',  Dotum, 돋움, Helvetica, Arial, sans-serif ;  
+	vertical-align:baseline; 
+	background:transparent;
+	color:inherit;
+}
+
+fieldset, img, iframe{border:0 none}
+dl, ul, ol, li {list-style:none;}
+blockquote, q  {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;}
+input, select, textarea, button {vertical-align:middle;}
+button{border:0 none;background-color:transparent;cursor:pointer;}
+address, caption, cite, code, dfn, em, strong, th, var{ font-style:normal; font-weight:normal;}
+legend, caption {visibility:hidden;height:0;width:0;font-size:0;}
+
+legend{*width:0}
+hr{display:none;}
+option{padding-right:6px}
+i,em,address{font-style:normal}
+img{vertical-align:top}
+
+table, th, td, input, select, textarea, button, a {font-family:inherit;  font-weight:400; color:inherit; line-height:;}
+
+a {color:inherit}
+a,a:hover,a:visited,a:active {text-decoration:none;}
+table {border-collapse:collapse;border-spacing:0;}
+
+html, body {width:100%;height:100%;}
+
+button, input, textarea, input[type="button"], input[type="reset"], input[type="submit"], input[type="number"] {-webkit-appearance:none; border-radius:0;} /* 모바일 webkit 브라우져에서 input등 기본 속성 제거 */
+* {box-sizing:border-box;}
+select {-webkit-appearance:none;}
+input[type=number]::-webkit-inner-spin-button {-webkit-appearance: none;}
+
+::-webkit-scrollbar {width:10px; height:10px;}
+::-webkit-scrollbar-button{height:0; width:0;} 
+::-webkit-scrollbar-track {background-color:#f1f1f1; border:none;  box-shadow:0; border-radius:0px;}
+::-webkit-scrollbar-track:horizontal {border-top:1px solid #fff;}
+::-webkit-scrollbar-thumb {background-color:rgba(0,0,0,0.2); border-radius:0px; border:0px solid #aaa;}
+::-webkit-scrollbar-corner{} 
+::-webkit-scrollbar-thumb:hover {background-color:rgba(0,0,0,0.4);}
+
+/* ie용 */
+body {
+ scrollbar-face-color: #b0b0b0; 
+ scrollbar-highlight-color: #a3a3a3;
+ scrollbar-shadow-color: #a3a3a3; 
+ scrollbar-3dlight-color: #a3a3a3;
+ scrollbar-arrow-color: #aaa; 
+ scrollbar-track-color: #e0e0e0;
+ scrollbar-darkshadow-color: #e0e0e0; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,4 +6,15 @@ $(document).ready(function(){
         $('.logo1').show();
         $('.logo2').hide();
     });
+
+    // $('.post-slider').slick();
+    $('.s_slick_slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        // rtl: true
+        //오토 플레이 실행 
+      });
 });
