@@ -1,3 +1,12 @@
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 공통요소 */
+.pColor{
+    color: #442279;
+}
 header{
     width:100%;
     background: transparent;
@@ -104,4 +113,187 @@ header:hover .lnb li a{
 .p03{
     font-size: 24px;
     margin: 40px 0 0 5px;
+}
+.p_color{
+    color: #4B4B4B !important;
+}
+.p_color span{
+    color: #442279;
+}
+.section_wrap{
+    max-width: 1280px; margin: 0 auto;
+    padding: 0 30px 180px;
+    border: 1px solid red;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.section{
+    border:1px solid black;
+    overflow: hidden;
+}
+.section2{
+    padding-top: 100px;
+    margin-bottom: 70px;
+    /* overflow: initial; */
+    /* position: relative; */
+}
+.section2 .titArea{
+    width:24%;
+    display: inline-block;
+    background-color: yellowgreen;
+}
+.titArea .tit{
+    color:#694e95 ;
+    font-size: 30px; font-weight: bold;
+    padding: 15px 0 8px 0;
+    position: relative;
+}
+.titArea .tit:before{
+    position: absolute; top: 0;
+    content:"";
+    display: block;
+    background:#694e95;
+    width:32px; height:3px;
+}
+.titArea .stit{
+    font-size: 24px;
+    color: #4b4b4b;
+}
+.section2 .conArea{
+    width:76%;
+    display: inline-block;
+}
+.diy_slider_wrap{
+    position: relative;
+    height:270px;
+    overflow: hidden;
+}
+.slider_ul{
+    overflow: visible;
+    width: 927px;
+    height: 250px;
+    background:yellow;
+    /* display:grid; */
+    /* grid-column:(4,231.75px); */
+}
+.slider_ul li{
+    transition: none 0s ease 0s;
+}
+.slider_ul li a{
+    display:block;
+    text-align: center;
+    margin: 0 10px;
+}
+.slider_ul li .imgBox{
+    width:145px;
+    display:block;
+    overflow: hidden;
+}
+.slider_ul li .imgBox img{
+    max-height: 100%; 
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section3 .conArea{
+    width: 66.66%;
+    display: inline-block;
+    max-height: 300px;
+    overflow:hidden;
+}
+.section3 .conArea img{
+    width:100%;
+}
+.section3 .titArea{
+    width:33.33%;
+    padding-left: 45px;
+    border: 1px solid pink;
+    display:inline-block;
+}
+.section3 .btnArea{
+    margin-top: 30px;
+}
+.section3 .btnArea a{
+    display:inline-block;
+    font-size: 16px;
+    color: #fff;
+    line-height: 34px;
+    background: #684d94;
+    height: 36px;
+    padding: 0 25px;
+}
+.section4{
+    margin-right: -20px;
+    margin-top: 100px;
+}
+.section4 .titArea{
+    padding: 20px 30px 16px 0;
+    width: 50%;
+}
+.section4 .textArea{
+    line-height: 1.45em;
+    font-size: 18px; color: #4B4B4B;
+}
+.section4 .textArea strong{
+    font-weight: bold;
+}
+.section4 .Slogan {
+    margin-top:30px;
+    font-size: 30px; font-weight: bold;
+    color: #4b4b4b;
+}
+.section4 .Slogan strong{
+    font-weight: bold;
+}
+.section4 .conArea{
+    width: 50%;
+}
+.section4 .conArea img{
+    width: 100%;
+}
+.section5{
+    margin-top:100px;
+}
+.section5 ul{
+    overflow: hidden;
+}
+.section5 ul li{
+    float: left;
+    text-align: center;
+    width: 33.33%;
+    margin: 0 20.343px;
+}
+.section5 .Icon{
+    display:inline-block;
+    width:60px; height:60px;
+    background-size: 100% auto;
+    background-position: 0 0;
+    background-image: url('./img/section5/main_bsPill_iconSet.png');
+}
+.Icon .Icon1{
+    background-position: 0 0;
+}
+.section5 .title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px; padding-bottom: 10px;
+    position: relative;
+}
+.section5 .title::after{
+    content: "";
+    display: inline-block;
+    width: 32px; height:3px;
+    position: absolute; bottom:0; left: 50%;
+    transform: translateX(-50%);
+    background:#442279;
+}
+.section5 .stitle{
+    font-size:;
+    color: ;
+    margin-top: 15px;
 }

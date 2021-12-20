@@ -16,5 +16,6 @@ $(document).ready(function(){
         cssEase: 'linear',
         // rtl: true
         //오토 플레이 실행 
-      });
+      });        
+      
 });
