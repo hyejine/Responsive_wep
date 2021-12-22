@@ -16,6 +16,12 @@ $(document).ready(function(){
         cssEase: 'linear',
         // rtl: true
         //오토 플레이 실행 
-      });        
+      });
+      
+      $('button').click(function(){
+         $('html,body').animate({scrollTop:0},200);
+      });
+
+      
       
 });
