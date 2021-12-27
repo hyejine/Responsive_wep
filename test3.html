@@ -28,6 +28,19 @@
         flex:1;
         max-width:20%;
     }
+    .animation{
+        animation: ani_txt .5s .1s ease-out forwards;
+    }
+    @keyframes ani_txt {
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
     </style>
 <body>
     <div class="wrap">
@@ -39,6 +52,11 @@
             <li><i class="background"></i></li>
 
         </ul>
+    </div>
+
+
+    <div class="animation">
+        dfasdfdfsf
     </div>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>존경받는 기업, 자랑스러운 회사 KG</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./kg2.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
@@ -12,6 +12,15 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="./kg.js"></script>
     <script type="text/javascript" src="./slick.js"></script>
+    <script type="text/javascript">
+     function scroll_btn() {
+        var offset = $("#contentWrap").offset();  //선택한 태그의 위치를 반환
+        $('html, body').animate({scrollTop: offset.top}, 600);
+          //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.6초 동안 부드럽게 해당 위치로 이동함 
+    };
+</script>
+<!-- touchSlider -->
+	<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
 </head>
 <body>
     <header>
@@ -108,50 +117,77 @@
               </div>
             </div>
         </div>
+        <a href="#" onclick="scroll_btn()">
+            <img src="./img/scroll.png" alt="" class="scroll_a">
+            </a>
     </section>
     
+    
+    <div id="contentWrap">
     <section class="section_wrap">
-        <div class="section2 section">
+        <div class="section2 clear">
             <div class="titArea fl">
                 <p class="tit">사업영억</p>
                 <p class="stit">KG의 다양한<br/>사업 영역을 소개합니다.</p>
             </div>
-            <div class="conArea"></div>
-            <!-- <div class="titArea fl">
-                <p class="tit">사업영억</p>
-                <p class="stit">KG의 다양한<br/>사업 영역을 소개합니다.</p>
-            </div> -->
-            <!-- <div class="conArea fr"> -->
-                <!-- <div class="diy_slider_wrap">
-                    <ul class="slider_ul">
-                        <li style="transform: translate3d(0px, 0px, 0px)"><a>
-                            <span class="imgBox">
-                                <img src="./img/diy_slider/main_bsArea_img02.png" alt=""> 
-                            </span>
-                            <p></p>
-                            <p></p>
+            <div class="conArea fr">
+                <div class="diy_slider_wrap">
+                    <ul>
+                        <li><a href="">
+                           <span><img src="./img/diy_slider/main_bsArea_img02.png"></span>
+                           <p class="tit">철강</p>
+                           <p class="sTit">#철강재 #냉연 #아연도 <br/> 
+                               #칼라강판 #석도강판
+                           </p>
                         </a></li>
-
-                        <li style="transform: translate3d(0px, 0px, 0px)"><a>
-                            <span class="imgBox">
-                                <img src="./img/diy_slider/main_bsArea_img02.png" alt=""> 
-                            </span>
-                            <p></p>
-                            <p></p>
-                        </a></li>
-
-                        <li style="transform: translate3d(0px, 0px, 0px)"><a>
-                            <span class="imgBox">
-                                <img src="./img/diy_slider/main_bsArea_img02.png" alt=""> 
-                            </span>
-                            <p></p>
-                            <p></p>
-                        </a></li>
+                        <li><a href="">
+                            <span><img src="./img/diy_slider/main_bsArea_img03.png"></span>
+                            <p class="tit">화학/친환경</p>
+                            <p class="sTit">#비료 #2차전지 #건설소재 #요소수<br/> 
+                                #산화동 #황산동
+                            </p>
+                         </a></li>
+                         <li><a href="">
+                            <span><img src="./img/diy_slider/main_bsArea_img04.png"></span>
+                            <p class="tit">IT</p>
+                            <p class="sTit">#통합결제플랫폼 #온라인결제<br/> 
+                                #간편결제 #휴대폰결제 #POS<br/> 
+                                #키오스크
+                            </p>
+                         </a></li>
+                         <li><a href="">
+                            <span><img src="./img/diy_slider/main_bsArea_img05.png"></span>
+                            <p class="tit">컨설팅/교육</p>
+                            <p class="sTit">#금융컨설팅 #펀드평가 #펀드닥터<br/> 
+                                #물류/유통 #미스터리쇼핑 
+                            </p>
+                         </a></li>
+                         <li><a href="">
+                            <span><img src="./img/diy_slider/main_bsArea_img07.png"></span>
+                            <p class="tit">레저</p>
+                            <p class="sTit">#Public #18홀 #K-LPGA 오픈<br/> 
+                                #연수원 #기업교육
+                            </p>
+                         </a></li>
+                         <li><a href="">
+                            <span><img src="./img/diy_slider/main_bsArea_img08.png"></span>
+                            <p class="tit">F & B</p>
+                            <p class="sTit">#KFC #HOLLYS #할리스<br/> 
+                            </p>
+                         </a></li>
+                         <li><a href="">
+                            <span><img src="./img/diy_slider/main_bsArea_img09.png"></span>
+                            <p class="tit">미디어</p>
+                            <p class="sTit">#뉴스 #신문 #공정보도 #컨텐츠 #방송<br/> 
+                                #전략포럼 #여성포럼
+                            </p>
+                         </a></li>
                     </ul>
-                </div> -->
-            <!-- </div> -->
+                    <button type="button" class="btn_prev1 Area"></button>
+                    <button type="button" class="btn_next1 Area"></button>
+                </div>
+            </div>
         </div>
-
         <div class="section3 section">
             <div class="conArea fl">
                 <img src="./img/section3/main_scAct_img01.png" alt="">
@@ -267,6 +303,7 @@
             </div>
         </div>
     </section>
+</div>
 
     <footer>
         <div class="footer_wrap">

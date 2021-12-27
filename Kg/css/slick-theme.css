@@ -116,7 +116,7 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .slick-dots
@@ -200,4 +200,7 @@
 {
     opacity: .75;
     background-color: #5920b2;
+}
+.slick-docts li:last-child::after{
+    
 }
