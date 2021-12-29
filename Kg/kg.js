@@ -56,10 +56,15 @@ $(document).ready(function(){
 		btn_next : $(".conArea").find(".btn_next1")
 	});
     
-    // $('.scroll_a').click(function(){
-    //     var $offset = $('.section2').offset().top;
-    //     $('html,body').animate({    
-    //         scrollTop: $offset
-    //         },500)
-    //     })
+    $(".conArea").touchSlider({
+        viewport: ".diy_slider_wrap",				//플리킹될 페이지리스트
+        prev : ".btn_prev1",
+        next : ".btn_next1",
+        pagination : ".diy_slider_wrap > a",	//페이지버튼
+        currentClass : "on",				//페이지 버튼 리스트 활성화 클래스
+        // auto : true	,						//자동플래이 false or true : 기본값은 false
+        autoTime : 5000 ,					// 1000 = 1초 기본값 5000
+        duration: 500						//슬라이드속도
+    });
+
 });

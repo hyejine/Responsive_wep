@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videoTest2</title>
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+    var player = videojs("#videoPlayer",{
+        controls: true,
+        poster="https://cdn.inflearn.com/public/courses/324582/course_cover/1ead1042-97cc-41f2-bc73-a6e86ae86a4d/nodeReact.png"
+    });
+    // video.currentTime(20);    
+    </script>
+</head>
+<body>
+    <video id ="videoPlayer" class="video-js vjs-big-play-centered" 
+    controls
+    poster="https://cdn.inflearn.com/public/courses/324582/course_cover/1ead1042-97cc-41f2-bc73-a6e86ae86a4d/nodeReact.png" 
+    data-setup="{}">
+    <source src="./f(x) 에프엑스 _Pink Tape_ The 2nd Album Art Film.mp4" type="video/mp4">
+    <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+        >
+      </p>
+    
+    </video>
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+</body>
+</html>
